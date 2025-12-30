@@ -500,7 +500,7 @@ let totalProgress = 20; // Start with 20%
 
 function updateProgress(percent) {
     totalProgress = percent;
-    progressFill.style.width = `${percent}%`;
+    progressFill.style.width = percent + '%';
     
     const steps = [
         { min: 0, max: 10, text: "Step 1/10: Project Setup" },
@@ -565,4 +565,5 @@ function updateProgress(percent) {
         console.log("🚀 Chess Game code loaded successfully!");
     </script>
 </body>
+
 </html>
